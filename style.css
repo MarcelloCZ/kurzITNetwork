@@ -9,12 +9,46 @@ body {
     color: #414042;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    color: #0a294B;
-    text-shadow: 2px 2px 0 #88abd1, 3px 3px 7px #666666;
+article header {
+    height: 80px;
 }
 
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #003868;
+}
+
+article {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+article h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article section p {
+    line-height: 1.8em;
+}
+
+article section a {
+    color: #EF6534;
+}
+
+img {
+    width: 300px;
+}
 /* Stínů může být více viz kod výše */
 /* 3px a 3px tedy pixely 1 a 2 ozacuji stíny napravo a dole  */
 /* 7px tedyx pixel 3 označuje ostrost stínu. 1 je nejostřejší */

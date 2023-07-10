@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 0 #88abd1, 3px 3px 7px #666666;
 }
 
+/* Stínů může být více viz kod výše */
 /* 3px a 3px tedy pixely 1 a 2 ozacuji stíny napravo a dole  */
 /* 7px tedyx pixel 3 označuje ostrost stínu. 1 je nejostřejší */
 

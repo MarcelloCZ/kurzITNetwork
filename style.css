@@ -54,10 +54,10 @@ img {
 }
 
 .avatar{
-    float: right;
-    width: 300px;
-    padding-left: 10px;
-    filter: grayscale(1);
+    float: right;   /* umístění obrázku */
+    width: 300px;   /* šířka obrázku */
+    padding-left: 10px;  /* odsazení oobrázku */
+    filter: grayscale(1);  /* filtr fotky na cernobílou */
 }
 /* Stínů může být více viz kod výše */
 /* 3px a 3px tedy pixely 1 a 2 ozacuji stíny napravo a dole  */

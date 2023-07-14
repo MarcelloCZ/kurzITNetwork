@@ -1,0 +1,13 @@
+$(document).ready(function () {
+    $("a[data-confirm], input[type='submit'][data-confirm]").click(function(e) { // Links with confirmation
+        if (!confirm($(this).data('confirm')))
+            e.preventDefault();
+    });
+
+    $("a[data-exercise-url]").click(function(e) { // Links to the next article or to the next exercise
+        if (confirm(T.CONFIRM_VISIT_EXERCISE)) {
+            e.preventDefault();
+            window.location = $(this).data('exercise-url');
+        }
+    });
+});

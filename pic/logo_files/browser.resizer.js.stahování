@@ -1,0 +1,6 @@
+// Resize iframe to the height of its contents
+$(function() {
+    $("iframe.browser").height(function(index, height) {
+        $(this).height($(this).contents().height());
+    });
+});

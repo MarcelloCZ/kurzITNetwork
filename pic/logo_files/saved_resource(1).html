@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html lang="cs-cz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Moje první webová stránka</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+body {
+    font: 14px "Poppins";
+    background: #f9f9f9;
+    color: #414042;
+    box-sizing: border-box;
+    margin: 0;
+}
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #00386B;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('/images/5/html/html-staticky/logo.png') no-repeat;
+    background-size: 40px 40px;
+}
+#logo > * {
+    margin: 0 0 0 50px;
+}
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: white;
+}
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul a:hover, .aktivni a {
+    border-bottom: 2px solid #EF6534;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 10px 0;
+    color: #00386B;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 50px 50px 10px 50px;
+}
+
+article header {
+    height: 80px;
+}
+
+article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    border-bottom: 4px solid #EF6534;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article section p {
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+}
+
+article section a {
+    color: #EF6534;
+}
+
+.avatar{
+    float: right;
+    width: 300px;
+    padding-left: 10px;
+    filter: grayscale(1);
+}
+
+.cistic {
+    clear: both;
+}
+
+.reference-tlacitko {
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+/* Pravidlo pro správné zobrazení menu zde v prohlížeči */
+body {
+    min-width: 960px;
+}
+    </style>
+</head>
+
+<body>
+<header>
+    <div id="logo">
+        <h1>Honza<span>Bittner</span></h1>
+        <small>webdeveloper</small>
+    </div>
+    <nav>
+        <ul>
+            <li class="aktivni"><a href="https://www.itnetwork.cz/index.html">Domů</a></li>
+            <li><a href="https://www.itnetwork.cz/omne.html">O mně</a></li>
+            <li><a href="https://www.itnetwork.cz/dovednosti.html">Dovednosti</a></li>
+            <li><a href="https://www.itnetwork.cz/reference.html">Reference</a></li>
+            <li><a class="kontakt-tlacitko" href="https://www.itnetwork.cz/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article>
+        <header>
+            <h1>O mně</h1>
+        </header>
+
+        <section>
+            <img src="https://www.itnetwork.cz/images/5/html/html-staticky/avatar.jpg" class="avatar" alt="Programátor HoBi">
+            <p>
+                Vítejte na mém prvním webu, psát weby se teprve učím, ale myslím, že mi to docela jde.
+            </p>
+
+            <p>
+                Jmenuji se Honza Bittner a je mi 16 let. Chodím na Střední průmyslovou školu v České Lípě na obor IT.
+                Kontaktovat mě můžete na <a href="https://www.itnetwork.cz/kontakt.html">kontaktní stránce</a>.
+            </p>
+
+            <p>
+                Rád čtu a někdy (hlavně v létě) i sportuju.
+            </p>
+
+            <p>
+                Mým hlavním koníčkem (a doufám že jednou i zaměstnáním) je <strong>programování</strong>!
+            </p>
+
+            <h2>Dovednosti</h2>
+            <p>
+                Co umím, jsem sepsal na stránce <a href="https://www.itnetwork.cz/dovednosti.html">dovednosti</a>.
+            </p>
+
+            <p class="tlacitko-odstavec">
+                <a href="https://www.itnetwork.cz/reference.html" class="reference-tlacitko">Moje reference</a>
+            </p>
+            <div class="cistic"></div>
+        </section>
+</article>
+<footer>
+    Vytvořil ©HoBi 2021 pro <a href="https://itnetwork.cz/">itnetwork.cz</a>
+</footer>
+
+
+</body></html>

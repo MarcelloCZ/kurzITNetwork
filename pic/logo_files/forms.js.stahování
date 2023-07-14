@@ -1,0 +1,14 @@
+// A double-post protection, has to be as the last executed on the page
+var submitElement = null;
+
+$('form.fancyform input[type="submit"]').click(function() {
+    submitElement = $(this);
+});
+
+$('form.fancyform').submit(function(e) {
+    if (!$(this).hasClass("bypass-doublepost") && submitElement) {
+        $(this).find('input[type=submit]').prop('disabled', true);
+        // Inserts a replacement for the submit button since disabled inputs are not sent
+        $('<input>').attr('type','hidden').attr('name', submitElement.attr('name')).val(submitElement.val()).appendTo(this);
+    }
+});

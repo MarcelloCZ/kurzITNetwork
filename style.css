@@ -22,6 +22,8 @@ body {
     background: #f9f9f9;
     box-sizing: border-box;
     margin: 0;
+    padding: 100px 0px 0px 0Px;
+    min-width: 960px;
 }
 
 #logo {
@@ -176,4 +178,19 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+.vlevo {
+    float: left;
+}
+
+#dovednosti td {
+    width: 33%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid gray;
+}
+
+#dovednosti {
+    border-collapse: collapse;
 }
